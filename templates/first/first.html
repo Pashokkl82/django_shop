@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type="text/css" href="{% static '/first.css'  %}">
+
+</head>
+<body>
+    <div class="general-container">
+        <div class="container top-container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 class="title text-center">Наш магазин скоро откроется<br>
+                    Оставляйте Ваш емайл в форме ниже</h1>
+                    <div>
+                        <form action="" method ="post" class="form-inline text-center">{% csrf_token %}
+                        <div class="form-group">
+                            <label>Ваше имя:</label>
+{#                            {{ form.name}}#}
+{#                            <input  name="{{ form.name.name }}" class="form-control">}
+                        </div>
+                         <div class="form-group">
+                             <label>Ваше е-мэйл:</label>
+{#                             {{ form.email }}#}
+{#                            <input  name="{{ form.email.name }}" class="form-control">}
+                        </div>
+                            <button type="submit" class="btn btn-primary btn-orange">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
