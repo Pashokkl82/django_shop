@@ -1,5 +1,14 @@
- Please enter a commit message to explain why this merge is necessary,
-# especially if it merges an updated upstream into a topic branch.
-#
-# Lines starting with '#' will be ignored, and an empty message aborts
-# the commit.
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'db1',
+        'USER': 'django_shop',
+        'PASSWORD': '123',
+        'HOST': 'localhost',
+        'PORT': '',
+     }
+}
