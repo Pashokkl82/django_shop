@@ -20,13 +20,11 @@
                         <form action="" method ="post" class="form-inline text-center">{% csrf_token %}
                         <div class="form-group">
                             <label>Ваше имя:</label>
-{#                            {{ form.name}}#}
-{#                            <input  name="{{ form.name.name }}" class="form-control">}
+                            <input  name="{{ form.name.name }}" class="form-control">
                         </div>
                          <div class="form-group">
                              <label>Ваше е-мэйл:</label>
-{#                             {{ form.email }}#}
-{#                            <input  name="{{ form.email.name }}" class="form-control">}
+                            <input  name="{{ form.email.name }}" class="form-control">
                         </div>
                             <button type="submit" class="btn btn-primary btn-orange">Отправить</button>
                         </form>
